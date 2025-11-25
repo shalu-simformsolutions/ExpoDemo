@@ -9,7 +9,11 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.simform.ExpoDemo",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -19,7 +23,8 @@
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.simform.ExpoDemo"
     },
     "web": {
       "output": "static",
@@ -43,6 +48,21 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "47029d2f-ce2f-41e9-a35a-3fbb6390cbe3"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/47029d2f-ce2f-41e9-a35a-3fbb6390cbe3",
+      "enabled": true,
+      "checkAutomatically": "NEVER", // ON_LOAD - Automatically checks for updates each time the app launches.
+      "fallbackToCacheTimeout": 0
     }
   }
 }
