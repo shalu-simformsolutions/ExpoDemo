@@ -70,7 +70,7 @@ const AppUpdateScreen = () => {
       }
     >
       <View style={styles.container}>
-        <Text style={styles.title}>🔄 Expo OTA Updates</Text>
+        <Text style={styles.title}>Expo OTA Updates</Text>
         <TouchableOpacity style={styles.checkButton} onPress={checkForUpdates}>
           {isChecking ? (
             <ActivityIndicator size='small' color='#fff' />
