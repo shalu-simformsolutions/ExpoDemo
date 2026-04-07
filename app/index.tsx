@@ -75,7 +75,7 @@ const AppUpdateScreen = () => {
           {isChecking ? (
             <ActivityIndicator size='small' color='#fff' />
           ) : (
-            <Text style={styles.buttonText}>   Check for Updates</Text>
+            <Text style={styles.buttonText}>Check for Updates</Text>
           )}
         </TouchableOpacity>
         {updateAvailable && (
