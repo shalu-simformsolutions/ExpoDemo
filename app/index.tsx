@@ -53,6 +53,7 @@ const AppUpdateScreen = () => {
     } finally {
       setIsDownloading(false);
       setModalVisible(false);
+      setUpdateAvailable(false);
     }
   };
 
@@ -104,7 +105,10 @@ const AppUpdateScreen = () => {
 
               <TouchableOpacity
                 style={styles.cancelButton}
-                onPress={() => setModalVisible(false)}
+                onPress={() => {
+                  setModalVisible(false);
+                  setUpdateAvailable(false);
+                }}
               >
                 <Text style={styles.cancelText}>Later</Text>
               </TouchableOpacity>
